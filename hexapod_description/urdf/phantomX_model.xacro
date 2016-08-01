@@ -61,7 +61,7 @@
         <material>Gazebo/DarkGrey</material>
     </gazebo>
  	<!-- Attach the pan and tilt head -->
-   	<head name="head_base" parent="torso" color="White">
+   	<head name="head_base" parent="body_link" color="White">
       		<origin xyz="${head_offset_x} ${head_offset_y} ${head_offset_z}" rpy="0 0 ${PI}" />
    	</head>
 
