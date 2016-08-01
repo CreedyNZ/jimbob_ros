@@ -9,6 +9,9 @@
 	<xacro:property name="coxa_length" value="0.052" />
 	<xacro:property name="femur_length" value="0.065" />
 	<xacro:property name="tibia_length" value="0.133" />
+	<xacro:property name="head_offset_x" value="0.0475" />
+        <xacro:property name="head_offset_y" value="0.0036" />
+        <xacro:property name="head_offset_z" value="0.875" />
 
     <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
@@ -55,6 +58,11 @@
     <gazebo reference="body_link">
         <material>Gazebo/DarkGrey</material>
     </gazebo>
+ 	<!-- Attach the pan and tilt head -->
+   	<head name="head_base" parent="torso" color="White">
+      		<origin xyz="${head_offset_x} ${head_offset_y} ${head_offset_z}" rpy="0 0 ${PI}" />
+   	</head>
+
 
 	<!-- Joint properties -->
 	<xacro:property name="joint_lower_limit" value="-${3.14}" />
