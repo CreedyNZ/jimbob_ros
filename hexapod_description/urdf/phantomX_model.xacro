@@ -19,6 +19,8 @@
         </plugin>
     </gazebo>
 
+    <xacro:include filename="$(find rbx2_description)/urdf/pi_robot/pan_tilt_head_xtion.urdf.xacro" />	
+
     <link name="base_link"/>
 
     <joint name="base_joint" type="fixed">
