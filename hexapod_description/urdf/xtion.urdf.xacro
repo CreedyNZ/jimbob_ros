@@ -22,7 +22,7 @@
          <visual>
             <origin xyz="0 0 -0.02" rpy="0 0 0"/>
             <geometry>
-               <mesh filename="package://rbx2_description/meshes/xtion.stl" scale="${camera_mesh_scale} ${camera_mesh_scale} ${camera_mesh_scale}" />
+               <mesh filename="package://hexapod_description/meshes/phantomX/xtion.stl" scale="${camera_mesh_scale} ${camera_mesh_scale} ${camera_mesh_scale}" />
             </geometry>
             <material name="${color}" />
          </visual>
