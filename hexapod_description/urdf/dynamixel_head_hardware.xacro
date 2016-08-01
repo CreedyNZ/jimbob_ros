@@ -42,7 +42,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://rbx2_description/meshes/F10.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
+          <mesh filename="package://hexapod_description/meshes/phantomX/F10.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
         </geometry>
         <material name="${color}"/>
       </visual>
