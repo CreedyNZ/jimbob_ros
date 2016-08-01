@@ -75,7 +75,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://rbx2_description/meshes/F3.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
+          <mesh filename="package://hexapod_description/meshes/phantomX/F3.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
         </geometry>
         <material name="${color}"/>
       </visual>
@@ -108,7 +108,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://rbx2_description/meshes/ax12.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
+          <mesh filename="package://hexapod_description/meshes/phantomX/ax12.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
         </geometry>
         <material name="Black"/>
       </visual>
@@ -143,7 +143,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://rbx2_description/meshes/F3.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
+          <mesh filename="package://hexapod_description/meshes/phantomX/F3.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
         </geometry>
         <material name="${color}"/>
       </visual>
@@ -178,7 +178,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://rbx2_description/meshes/F4.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
+          <mesh filename="package://hexapod_description/meshes/phantomX/F4.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
         </geometry>
         <material name="${color}"/>
       </visual>
@@ -213,7 +213,7 @@
       <visual>
         <origin xyz="0 0 0 " rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://rbx2_description/meshes/F2.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
+          <mesh filename="package://hexapod_description/meshes/phantomX/F2.stl" scale="${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE} ${DYNAMIXEL_MESH_SCALE}"/>
         </geometry>
         <material name="${color}"/>
       </visual>
