@@ -8,8 +8,8 @@
    
   <property name="camera_mesh_scale" value="1.0" />
    
-  <xacro:include filename="$(find hexapod_description)/urdf/pi_robot/dynamixel_head_hardware.xacro" />
-  <xacro:include filename="$(find hexapod_description)/urdf/pi_robot/xtion.urdf.xacro" />
+  <xacro:include filename="$(find hexapod_description)/urdf/dynamixel_head_hardware.xacro" />
+  <xacro:include filename="$(find hexapod_description)/urdf/xtion.urdf.xacro" />
 
   <macro name="head" params="parent name color *origin">
     <!-- head base joint -->

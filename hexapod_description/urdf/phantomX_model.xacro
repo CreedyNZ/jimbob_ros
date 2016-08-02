@@ -9,9 +9,9 @@
 	<xacro:property name="coxa_length" value="0.052" />
 	<xacro:property name="femur_length" value="0.065" />
 	<xacro:property name="tibia_length" value="0.133" />
-	<xacro:property name="head_offset_x" value="0.0475" />
-        <xacro:property name="head_offset_y" value="0.0036" />
-        <xacro:property name="head_offset_z" value="0.875" />
+	<xacro:property name="head_offset_x" value="0.065" />
+  <xacro:property name="head_offset_y" value="0.000" />
+  <xacro:property name="head_offset_z" value="0.000" />
 
     <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
@@ -19,7 +19,7 @@
         </plugin>
     </gazebo>
 
-    <xacro:include filename="$(find rbx2_description)/urdf/pi_robot/pan_tilt_head_xtion.urdf.xacro" />	
+    <xacro:include filename="$(find hexapod_description)/urdf/pan_tilt_head_xtion.urdf.xacro" />	
 
     <link name="base_link"/>
 
@@ -61,12 +61,12 @@
     <joint name="lidar_joint" type="fixed">
         <parent link="body_link" />
         <child link="lidar_link" />
-        <origin xyz="0.2 0.0 0.0" rpy="0.0 0.0 0.0" />
+        <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0" />
     </joint>
 
 	<link name="lidar_link">
 			<visual>
-	  			<origin	xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+	  			<origin	xyz="0.0 0.0 0.0" rpy="0.0 0.0 ${PI}" />
       			<geometry>
         			<mesh filename="package://hexapod_description/meshes/phantomX/xv-11_lidar.stl" scale="0.001 0.001 0.001"/>
       			</geometry>
@@ -98,7 +98,7 @@
         <material>Gazebo/DarkGrey</material>
     </gazebo>
  	<!-- Attach the pan and tilt head -->
-   	<head name="head_base" parent="body_link" color="White">
+   	<head name="head_base" parent="body" color="White">
       		<origin xyz="${head_offset_x} ${head_offset_y} ${head_offset_z}" rpy="0 0 ${PI}" />
    	</head>
 

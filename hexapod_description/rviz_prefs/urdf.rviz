@@ -159,8 +159,6 @@ Visualization Manager:
                 {}
               camera_rgb_optical_frame:
                 {}
-              imu_link:
-                {}
               leg_center_LF:
                 coxa_LF:
                   femur_LF:
