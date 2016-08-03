@@ -13,12 +13,11 @@
           <param name="subscribe_depth" type="bool" value="true"/>
           <param name="subscribe_scan" type="bool" value="true"/>
 
-          <remap from="odom" to="/odometry/calculated"/>
-          <remap from="scan" to="/base_scan"/>
+          <remap from="odometry/calculated" to="/odometry/calculated"/>
 
-          <remap from="rgb/image" to="/camera/rgb/image_rect_color"/>
-          <remap from="depth/image" to="/camera/depth_registered/image_raw"/>
-          <remap from="rgb/camera_info" to="/camera/rgb/camera_info"/>
+          <remap from="camera/rgb/image_raw" to="/camera/rgb/image_rect_color"/>
+          <remap from="camera/depth/image" to="/camera/depth_registered/image_raw"/>
+          <remap from="camera/rgb/camera_info" to="/camera/rgb/camera_info"/>
 
           <param name="queue_size" type="int" value="10"/>
 
