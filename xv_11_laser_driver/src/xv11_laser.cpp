@@ -124,8 +124,8 @@ namespace xv_11_laser_driver {
 
 	    boost::asio::read(serial_,boost::asio::buffer(&raw_bytes[2], 1978));
 
-	    scan->angle_min = 0.0;
-	    scan->angle_max = 2.0*M_PI;
+	    scan->angle_min = 0.1*M_PI;
+	    scan->angle_max = 1.9*M_PI;
 	    scan->angle_increment = (2.0*M_PI/360.0);
 	    scan->range_min = 0.06;
 	    scan->range_max = 5.0;
