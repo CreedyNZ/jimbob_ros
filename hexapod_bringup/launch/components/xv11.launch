@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- xv11 launch file -->
+
+<launch>
+    <node name="XV11_lidar" pkg="xv_11_laser_driver" type="xv_11_laser_driver neato_laser_publisher.cpp" />
+    <param name="firmware_version" value="2"/>
+</launch>
