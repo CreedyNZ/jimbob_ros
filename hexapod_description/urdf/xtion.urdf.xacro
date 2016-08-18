@@ -34,13 +34,13 @@
          </collision>
       </link>
     
-      <joint name="camera_depth_joint" type="fixed">
+      <joint name="camera_depth_frame" type="fixed">
           <origin xyz="0 0.025 0" rpy="0 0 0" />
           <parent link="camera_link" />
-          <child link="camera_depth_frame" />
+          <child link="camera_depth_frame_link" />
       </joint>
 
-      <link name="camera_depth_frame">
+      <link name="camera_depth_frame_link">
       <inertial>
          <mass value="0.000001" />
          <origin xyz="0 0 0" />
@@ -50,9 +50,9 @@
          </inertial>
       </link>
 
-      <joint name="camera_depth_optical_joint" type="fixed">
+      <joint name="camera_depth_joint" type="fixed">
          <origin xyz="0 0 0" rpy="${-PI/2} 0 ${-PI/2}" />
-         <parent link="camera_depth_frame" />
+         <parent link="camera_depth_frame_link" />
          <child link="camera_depth_optical_frame" />
       </joint>
 

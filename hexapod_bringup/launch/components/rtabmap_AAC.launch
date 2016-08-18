@@ -1,12 +1,5 @@
 <launch>
   <group ns="rtabmap">
-  <node pkg="nodelet" type="nodelet" name="depthimage_to_laserscan" args="load depthimage_to_laserscan/DepthImageToLaserScanNodelet camera/camera_nodelet_manager" >
-        <param name="scan_height" value="10" />
-        <param name="output_frame_id" value="body_link" />
-        <remap from="image" to="/camera/depth_registered/image_raw" />
-        <remap from="camera/image" to="/camera/depth_registered/image_raw" />
-        <remap from="camera/scan" to="scan" />
-    </node>
     <node name="rtabmap" pkg="rtabmap_ros" type="rtabmap" output="screen" args="--delete_db_on_start">
           <param name="frame_id" type="string" value="base_link"/>
 

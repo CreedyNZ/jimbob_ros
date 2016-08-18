@@ -64,6 +64,9 @@
    <camera name="camera" parent="head_tilt_bracket" color="Black">
       <origin xyz="${camera_offset_x} ${camera_offset_y} ${camera_offset_z}" rpy="0 0 0" />
    </camera>
+   
+   
+   
 
  </macro>
 
